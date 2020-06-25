@@ -1,0 +1,21 @@
+---
+title: "Knuth Check"
+date: 2015-07-06
+draft: false
+---
+
+* Wait, what?
+
+I received a Reward Check from Dr. Donald Knuth!  It's true.  I reported an error in a book.  And I got a check.
+
+* What For?
+
+An error on the cover of "Things a Computer Scientist Rarely Talks About".  There's a missing space between a comma and the word aesthetics, and I reported it.
+
+* Can I see it?
+
+Sure!
+
+It looks like this:
+
+{{< figure src="/img/knuth-check.jpg" caption="Knuth Reward Check" >}}
