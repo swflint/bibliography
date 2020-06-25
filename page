@@ -5,4 +5,4 @@ TITLE=$1
 FILENAME=pages/"$TITLE"/index.org
 
 hugo new $FILENAME
-$EDITOR $FILENAME
+$EDITOR content/$FILENAME
