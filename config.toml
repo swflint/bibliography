@@ -2,6 +2,7 @@ baseURL = "http://samflint.com/"
 languageCode = "en-us"
 title = "Samuel W. Flint"
 theme = "hugo-kiera"
+tagline = ""
 enableRobotsTXT = "true"
 
 [params]
