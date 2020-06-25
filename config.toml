@@ -20,3 +20,8 @@ theme = "hugo-kiera"
     identifier = "notes"
     name = "Notes"
     url = "/notes/"
+
+[[menu.main]]
+    identifier = "pages"
+    name = "Pages"
+    url = "/pages/"
