@@ -4,7 +4,6 @@ title = "Samuel W. Flint"
 theme = "hugo-kiera"
 enableRobotsTXT = "true"
 disqusShortname = "samflint-com"
-CommentAutoload = "true"
 copyright = "&copy; Samuel Flint"
 
 [permalinks]
@@ -14,6 +13,7 @@ copyright = "&copy; Samuel Flint"
 [params]
     tagline = "A tech and academic blog"
     show_comments = "true"
+    commentAutoload = "true"
 
 [author]
     name = "Samuel W. Flint"
