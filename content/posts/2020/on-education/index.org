@@ -1,0 +1,25 @@
+---
+title: "On Education"
+date: 2020-06-25T11:39:58-05:00
+draft: true
+---
+
+* On Education
+
+Recently, Warren Buffet stated that he believes that college is not for everyone[fn:1].  He's not entirely wrong, however, he misses something.  In most universities in the United States, the education is that of the Liberal Arts.  These are beyond important, and, as a professor[fn:2] recently reminded me, the Liberal Arts are the difference between a leader that appeals to the worst parts of our humanity and a leader that appeals to the best parts of our humanity.  Then the Liberal Arts are necessary.  And yet, does everyone need an University education?  Perhaps not, perhaps instead the model needs to be changed.  In this, we'll consider both Primary/Secondary Education and Higher Education.
+
+** Primary/Secondary Education
+
+Primary and Secondary Education (elementary through highschool) is vitally important.  But what is its purpose?  How does this inform policy?  How is this to inform the education itself?  How should this inform Higher Education?
+
+First, the purpose of Primary and Secondary Education.  As I see it, this is to educate a populace to literacy and to enforce basic lifeskills.
+
+** Higher Education
+
+** Conclusion
+
+* Footnotes
+
+[fn:1] See [[https://finance.yahoo.com/news/warren-buffett-business-school-college-192314230.html][Warren Buffett explains why he thinks going to college isn't for everybody]] (27 April, 2019).
+
+[fn:2] Thanks Prof. Nashleanas!
