@@ -2,6 +2,7 @@
 title: "Capturing Data for Org via Email"
 date: 2017-03-13T16:40:00-05:00
 draft: false
+aliases: ["/capture-with-email.html"]
 ---
 
 * Why
