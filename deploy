@@ -4,5 +4,6 @@ USER=swflint
 HOST=kernighan.flintfam.org
 DIR=/var/www/samflint.com
 
-hugo & rsync -avz public/ ${USER}@${HOST}:$DIR
+hugo || exit
+rsync -avz public/ ${USER}@${HOST}:$DIR
 
