@@ -1,0 +1,104 @@
+---
+title: "Capturing Data for Org via Email"
+date: 2017-03-13T16:40:00-05:00
+draft: false
+---
+
+* Why
+
+When I'm away from my computer, I like to be able to still capture notes.  And while I'd love to use MobileOrg, it's not quite as full-featured as I'd like.  Because of this, I use email to send myself notes and the like.  Originally, I'd send them to my main inbox and go through them manually.  This, however, took a lot of time, so I decided to automate it.  It started out based on [[http://karl-voit.at/2016/12/23/email-to-orgmode/][Karl Voit's implementation]], but have since extended it, adding a couple of features, making it more useful for me.
+
+* How
+
+So, the question is how.  I mostly use standard unix utilities, but this does require the following:
+
+ - [[http://www.fetchmail.info/][Fetchmail]]
+ - Procmail utilities
+ - [[http://www.pldaniels.com/ripmime/][ripMIME]]
+ - [[http://pandoc.org/][Pandoc]]
+
+** Fetchmail Config
+
+The fetchmail config is what does the heavy lifting.  As it stands, it's a relatively simple configuration, selecting the server, protocol and setting the MDA, making sure that it doesn't keep emails on the server, fetches everything and doesn't rewrite the headers, not that that's a big deal in this case, as only 2 headers are required (~From~ and ~Subject).~
+
+#+Caption: Fetchmail Config
+#+Name: fetchmail-config
+#+BEGIN_SRC conf-space 
+  poll mail-server proto POP3
+       user "email-address" pass "the-password"
+       fetchall
+       no keep
+       no rewrite
+       mda "~/.dotfiles/do-capture.sh";
+#+END_SRC
+
+** Capture Script
+
+This is the capture script, and honestly, it's quite simple.  It defines the target file as ~$ORGFILE~, reading in the email into ~$EMAIL~ using a while loop and read, and parsing out the Subject, Send Date, and popping all of the mime data into a directory.  It then gets all of the body text and converts it to org-mode syntax.  From there, it generates an org entry and appends it to the ~$ORGFILE~.
+
+#+Caption: Capture Script
+#+Name: capture-script
+#+BEGIN_SRC shell 
+  #!/bin/sh
+
+  ## generates an org-file-entry from the email sent through stdin
+
+  ORGFILE="/path/to/email-capture.org"
+
+  ## build email by adding input from stdin line by line:
+  while IFS= read -r line
+  do
+      EMAIL="${EMAIL}
+  ${line}"
+  done
+
+  ## extract header information:
+  SUBJECT=$(echo "${EMAIL}" | formail -x Subject | sed -e 's/^ //')
+  DATE=$(echo "${EMAIL}" | formail -x Date | sed -e 's/^ //')
+
+  ## Create Data Directory
+  COUNT=1
+  DATADIR="/home/swflint/org/email-data/$(date +%F)/${COUNT}"
+  until [ ! -d "${DATADIR}" ] ;
+  do
+      COUNT=$((COUNT + 1))
+      DATADIR="/home/swflint/org/email-data/$(date +%F)/${COUNT}"
+  done
+
+  mkdir -p "${DATADIR}"
+  echo "${EMAIL}" | ripmime -i - -d "${DATADIR}"
+  for BODYFILE in ${DATADIR}/textfile* ; do
+      BODY="${BODY}
+  $(pandoc -t org < ${BODYFILE})"
+  done
+
+  ## append mail header and body as new TODO heading to ORGFILE:
+  cat <<EOF >>${ORGFILE}
+  ,* TODO Email: ${SUBJECT}
+  ${DATE}
+  [[file:${DATADIR}]]
+
+  ${BODY}
+
+  EOF
+#+END_SRC
+
+** Wrapper Script
+
+This part is completely and entirely optional, but it runs fetchmail, cd's to the capture directory, adds the changes to git and commits it.
+
+#+Caption: Wrapper Script
+#+Name: wrapper-script
+#+BEGIN_SRC shell 
+  #!/bin/sh
+
+  fetchmail
+
+  cd ~/path/to/capture/directory || exit 1
+  git add capture-file.org email-data && \
+      git commit -m "Pulled Emails for Capture"
+#+END_SRC
+
+* How Well Does It Work?
+
+So far, this works great!  It's fairly efficient, and let's me email myself notes and links.  I'm really excited about having it and it working!
