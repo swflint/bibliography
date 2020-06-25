@@ -9,12 +9,13 @@ enableRobotsTXT = "true"
     #tagline = "the tagline for this website"
 
 [author]
-    name = "Samuel W. Flint"           #Author name
-    github = "swflint"         #Github username
-    linkedin = "swflint"       #LinkedIn username
-    twitter = "SamuelWFlint"        #Twitter username
+    name = "Samuel W. Flint"
+    email = "swflint(at)flintfam(dot)org"
+    github = "swflint"
+    stackoverflow = "u/2378492"
+    linkedin = "swflint"
+    twitter = "SamuelWFlint"
     mastodon = "mstdn.io/@swflint"
-    stackoverflow = "u/2378492"  #StackOverflow username
     orcid = "0000-0002-8023-9710"
 
 [[menu.main]]
