@@ -1,0 +1,67 @@
+---
+title: "How I Work"
+date: 2017-12-05T10:59:38-05:00
+draft: false
+---
+
+* Hardware
+
+For the most part, I'm pretty hardware agnostic, as I don't do too much with low-level stuff.  Because of this, and the fact that if I need to do heavy lifting, I have a few different servers that I can use to do so for me, I use cheap, beater laptops, which works well for me.  The hardware I do care about is as follows:
+
+ - Keyboard :: Well, I used to use a Kinesis Freestyle 2, however, after 5 years of heavy use, it died!  Boo-hoo.  Oh well, time to buy a new one -- maybe a Kinesis Advantage 2?  But, as to layout, I use the Dvorak for Programmers layout, with Caps-Lock remapped to backspace, and a shifted space entering the unicode NBSP character.
+ - Mouse :: Err, trackball actually.  Depending on which computer I'm using, I use either a Logitech M570 or an Elecom EX-G.  Both are fine trackballs, but the only problem with either is that I have to pop the ball out and clean them on a semi-regular basis.
+ - External Monitors :: Well, in many circumstances, I use a second monitor -- an old Dell whatever with a mount that lets me switch it into portrait.  To get them to work, I have to use HDMI-to-DVI adapters, as my laptop only has HDMI!  Oh well, the screens are still great for long-form content or any time I'm dealing with \LaTeX!
+
+* Software
+
+Of course, being a computer scientist, I'm pretty opinionated about software!  I use a variety of tools, all to their own purposes.
+
+** Operating System
+
+I used to use Fedora, and honestly, would recommend it to anyone!  However, because of my unique needs (like destroying a laptop roughly every 2 years), I've switched to [[https://nixos.org][NixOS]], which lets me move my complete configuration to a new machine at install time -- completely and in only half a dozen extra keystrokes!
+
+** Window Management
+
+While there is a huge selection of window managers, especially tiling window managers, I use [[http://i3wm.org][i3]], and a fairly vanilla i3 at that.  While i3 lacks a full programming language to configure, it's pretty cool, and it handles my needs -- layout saving, multi-monitor, multi-workspace -- very well!
+
+** Emacs
+
+# I use Emacs, please don't hate me.  However, it is truly amazing, and while not all of the default keybindings are the most ergonomic (at least if you use qwerty), they are very much well-designed mnemonic-wise.  I don't use Emacs just for the sake of emacs though, I use emacs for itself and several other packages, namely org mode, magit, gnus, bbdb and slime, and the integration that I can build that way.
+
+All hail the one true editor!!  I do use Emacs, and it's amazing!  It lets me integrate many different features into one, fairly cohesive whole.  This is done using [[https://orgmode.org][Org Mode]], GNUS, EBDB (the replacement for BBDB), Magit and more!  Each of those are worth an article in their own right, but honestly, they each have some cool features!
+
+ - Org Mode :: A powerhouse of a Personal Information manager!  From well-linked notes, to an agenda, to seamless note capture, seamless encryption and even web-page publishing (it's what I use for this site), it's absolutely amazing!
+ - GNUS :: Combine this with EBDB and Org Mode, you get a super hyperlinkable email client that supports multiple accounts and many other things!
+ - EBDB :: Bring On the Contacts!  EBDB lets me manage contacts from multiple sources and integrate them everywhere!
+ - Magit :: As a big-time user of git, Magit saves my life.  It helps me do simple every day stuff quickly and easily and even helps me do some more advanced stuff (crazy rebases -- no problem).
+
+** General
+
+ - Shell :: The [[https://www.zsh.org/][Z Shell]], minimally configured
+ - Personal Finances :: [[http://furius.ca/beancount/][Beancount]] and [[https://beancount.github.io/fava/][Fava]], along with a half dozen shell scripts and an Emacs Mode
+ - Backups/Data Archival :: [[https://myrepos.branchable.com/][MyRepos]], [[https://git-scm.com/][Git]] and some shell scripts
+ - Cloud Hosting :: [[https://www.vultr.com/?ref=6972860][Vultr]], and just Vultr!  Most of my hosts run CentOS.
+ - Browser :: Chromium.  pretty minimally configured, with just a couple of extensions.
+
+* Analog and Other
+
+ - Pens
+   - Lamy Vista
+   - Esterbrook J, Dual Jewel
+   - Some Platinum Preppys
+ - Ink
+   - Diamine Oxford Blue
+   - Diamine Oxblood
+ - General Organization
+   - Some 'bookweight'
+   - A Grid-It
+   - Book Darts
+   - Miscelaneous cables and adapters
+ - A Timbuk2 Command in Gunmetal Grey
+ - Pleasure
+   - iPhone SE -- Am looking into possible Android replacements
+   - Amazon Kindle Keyboard -- Mostly for technical texts
+   - Anker Soundbuds Sport
+ - And a glorious standing desk!
+
+{{< figure src="/img/desk.jpg" >}}
