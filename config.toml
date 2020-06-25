@@ -5,6 +5,7 @@ theme = "hugo-kiera"
 enableRobotsTXT = "true"
 disqusShortname = "samflint-com"
 CommentAutoload = "true"
+copyright = "&copy; Samuel Flint"
 
 [permalinks]
     posts = "/:year/:month/:title/"
