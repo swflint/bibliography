@@ -1,0 +1,39 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- -----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Periodically it becomes necessary to supercede and revoke ones keys.
+
+Due to circumstances beyond my control, I am revoking 2E2B259F.
+
+I, Samuel Flint, hereby revoke 2E2B259F, allowing the key to be
+superceded by FA13D704.  This statement has been signed by both keys.
+- -----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCAAdFiEEplV+DvFbSs8YQYgCbgV7nC4rJZ8FAlwL5fsACgkQbgV7nC4r
+JZ8FJgf/RnUHAKjlQKKSxvIUx0Nib/SqBoLyyfy83ShCs0c1rHXqMijxoUyIBzU1
+RzN0+RtFC+Clz93gNuR2rK3MwU4tnM3T7W8GagmrsocRwjIMxQKm6FYLJ828eQ7m
+CenOGXcBnOP0e69eGIOsO2JMJXFsCKbl8VUZQXJXsKpSFO8vwQEv1ZrpZ1l3Vjmw
+hniFySwAM9mWM0/+H3MtBTxleXFom1CL5dUNGQGiHNOXo0/gWKwHJHjx88LEk+Lm
+OugaeBhzmXZXNDlBsYJLWdeewNmCd+cT1aWZ/5rmmtGWM3LUcOOihfr80vZrY7a4
+Jmth5oBovjpMZX+lSL+SBtxOnxtSmg==
+=b4lX
+- -----END PGP SIGNATURE-----
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEE9Q2GK09lWUOowu8Ohsk+evoT1wQFAlwL5iYACgkQhsk+evoT
+1wQO2Q//bPi20ZsuNpU7ll3I8ZwTqPZPKpnFPx6YNOVehqK1SjjrX7zlmvNzn8Ed
+sGSLo39EEK98OQxVhqfQSylmBI5wATZTkJr9XKeaPFaQ3Qg1z4A6beyMnRfgwU6k
+zlppD8h5axfIMtvnmNzSBhncuvM7cHUvvK1WSP6qJh0NICk+qCpg9XSDp26rB8/E
+Lh4ExpC/5GNGriU9yXDOx6SbtDcRkCb0BtHkTsSSVtK7fPqPjdahNlQFcplzfMVU
+bEeTkIA9sIGS60Z53MAjmaqNEh0G1G1RkaBGrfnscec7nvM+sULmIsvi5PD3ruw+
+r+OYqz0KoaHF/h0ej7rTaUSQkBjpeGxHzyKSIqvFopbNa04XXG+YrCcdoMAhqySQ
+HFuptOeNmlrW+XkHEiJ/PYO8vxBJmUdwoJk2dR3hR7j/pfFBfaoPoqJZUBII4PW4
+6mDb565yJ/F+SeoDASfLxBgEy6Stm1NEmGH+wYFHiqw5N/2mn8+M9av2idszn56D
+deOYo3Me7w3zOsOKpVixUoEIVFskaGu4PN70bzq/aST1t+ierroe/6p40Z/uPKZf
+l++zhGiOFJR5y6PFM7WjItIQEWw17j9oMLJR4geSaRaM6Qlx/uCJYGPZbEiKwAmj
+Ls2Cf8jEZtKbO1NP5cxYDGlmYvQK4ogeyFto+6A+pULSwApl2Zw=
+=R/OR
+-----END PGP SIGNATURE-----
