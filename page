@@ -1,0 +1,8 @@
+#!/bin/sh
+
+TITLE=$1
+
+FILENAME=pages/"$TITLE"/index.org
+
+hugo new $FILENAME
+$EDITOR $FILENAME
