@@ -12,6 +12,7 @@ CommentAutoload = "true"
 
 [params]
     tagline = "A tech and academic blog"
+    show_comments = "true"
 
 [author]
     name = "Samuel W. Flint"
