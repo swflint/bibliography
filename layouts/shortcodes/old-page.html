@@ -1,0 +1,21 @@
+{{ $date := .Get "date" }}
+{{ $otherPage := .Get "otherPage" }}
+{{ $author := $.Site.Author.name }}
+
+<small>
+    <i>
+        This post is old, and may no longer reflect my current way of doing things or my current opinions.  It may eventually be deleted or removed.
+        {{- if $otherPage}}
+        Try this instead:
+        <a href="{{ ref . $otherPage }}">
+            {{- with .Site.GetPage $otherPage }}
+            {{.Title}}            
+            {{- end -}}
+        </a>
+        {{- end -}}
+        {{ print "&mdash;" | markdownify }}
+        {{- with $.Site.Author.name }}
+        {{.}}, <time datetime="{{$date}}">{{ dateFormat "Monday, July 3, 2006" $date }}</time>
+        {{- end -}}
+    </i>
+</small>
