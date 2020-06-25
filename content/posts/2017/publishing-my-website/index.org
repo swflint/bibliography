@@ -1,0 +1,169 @@
+---
+title: "Publishing My Website"
+date: 2017-12-26T11:52:46-05:00
+draft: false
+---
+
+* It's all Static
+
+This whole site --- except for a gallery script --- is static.  I do this for one single reason, I use org-mode and I don't want to deal with getting it and Wordpress to cooperate!  And honestly, it's super easy to set up.
+
+* Configuration
+
+The configuration is the meat and potatoes of my workflow, and it's incredibly easy to work with!  It's built in about three steps, the sitemap generator, the definition macro and the site definitions themselves.
+
+** Sitemap Generation
+
+This does some magic -- creating a list of pages and posts, sorted in the correct order.
+
+Sadly, this function is crazy long, but a quick overview of what it does:
+
+ - It initializes the publish cache for the ~website-html~ project so it can call functions to get certain data about pages.
+ - It gets various data, from the project root to the index filename, to the list of files, without the index and sitemap files included.
+ - It generates a list of posts -- pages with the magic marker of ~# post~ somewhere in the file
+ - And a list of pages -- files that aren't posts.
+ - It then sorts the posts by date, most recent first; and the pages, by filename, in ASCIIbetical order.
+ - It generates the sitemap file itself, clearing it out, and printing out a tiny bit of content -- just two headings and lists under them.
+
+#+Caption: Generate a Sitemap
+#+Name: gen-sitemap
+#+BEGIN_SRC emacs-lisp 
+  (defun website/generate-sitemap (project)
+    "Generate a sitemap for PROJECT."
+    (message "Building a sitemap -- with style!")
+    (org-publish-initialize-cache "website-html")
+    (let* ((project (cons "" project))
+           (root (expand-file-name
+                  (file-name-as-directory
+                   (org-publish-property :base-directory project))))
+           (sitemap-filename (concat root "sitemap.org"))
+           (index-filename (concat root "index.org"))
+           (org-file-p (lambda (f) (equal "org" (file-name-extension f)))))
+      (let* ((files (remove sitemap-filename
+                            (remove index-filename
+                                    (org-publish-get-base-files project))))
+             (posts (remove-if-not #'(lambda (file)
+                                       (with-temp-buffer
+                                         (insert-file-contents file)
+                                         (point-min)
+                                         (search-forward "# post" nil t)))
+                                   files))
+             (pages (remove-if #'(lambda (file)
+                                   (member file posts)) files)))
+        (let ((sorted-posts (sort posts #'(lambda (file-a file-b)
+                                            (let* ((date-a (org-publish-find-date file-a project))
+                                                   (date-b (org-publish-find-date file-b project))
+                                                   (A (+ (lsh (car date-a) 16) (cadr date-a)))
+                                                   (B (+ (lsh (car date-b) 16) (cadr date-b))))
+                                              (>= A B)))))
+              (sorted-pages (sort pages #'(lambda (file-a file-b)
+                                            (let ((A (if (funcall org-file-p file-a)
+                                                         (concat (file-name-directory file-a)
+                                                                 (org-publish-find-title file-a project))
+                                                       file-a))
+                                                  (B (if (funcall org-file-p file-b)
+                                                         (concat (file-name-directory file-b)
+                                                                 (org-publish-find-title file-b project))
+                                                       b)))
+                                              (not (string-lessp B A)))))))
+          (with-temp-file sitemap-filename
+            (insert "* Pages\n")
+            (mapc (lambda (file)
+                    (insert (format " - [[file:%s][%s]]\n" (file-relative-name file root) (org-publish-find-title file project))))
+                  sorted-pages)
+            (insert "\n* Posts\n")
+            (mapc (lambda (file)
+                    (insert (format "- [[file:%s][%s]] (%s)\n" (file-relative-name file root) (org-publish-find-title file project) (format-time-string "%Y-%m-%d" (org-publish-find-date file project)))))
+                  sorted-posts))))))
+#+END_SRC
+
+** Definition Macro
+
+Instead of just using the good old fashioned ~setf~ call, I use a macro that makes it pretty easy to make changes to the publish projects alist -- the ~define-org-publish-project~ macro, which takes a name and then a definition in the form of keyword arguments.  By using a name, it can remove the old definition, and then replace it simply by consing it onto the list.
+
+#+Caption: Site Definition Macro
+#+Name: site-def-macro
+#+BEGIN_SRC emacs-lisp 
+  (defmacro define-org-publish-project (name &rest keyword-arguments)
+    `(progn
+       (setq org-publish-project-alist
+             (cons (list ,name ,@keyword-arguments)
+                   (remove-if (lambda (thing)
+                                (string= ,name (first thing)))
+                              org-publish-project-alist)))
+       ,name))
+#+END_SRC
+
+** The config itself
+
+So this puts everything together!
+
+I define two variables, the publishing directory (~*org-publish-website-publishing-directory*~) and the attachments directory (~*org-publish-website-attach-publish-directory*~).  However, the bulk of the publishing is done by four projects:
+
+ - ~website-html~ :: Uses ~org-html-publish-to-html~ to export to HTML, calls the sitemap generator before doing anything, includes some CSS and piwik tracking in all the html files, and excludes any org files in the ~possible~ directory (letting me keep drafts in the main repo).
+ - ~website-image~ :: Uses ~org-publish-attachment~ to copy all of the images, my PHP gallery script, and an ~.htaccess~ file over.
+ - ~website-attach~ :: Uses ~org-publish-attachment~ to copy anything in the ~attach~ directory up to the host.
+ - ~website~ :: It's a super-project, making it super quick to just run all of the others.
+
+#+Caption: Final Config
+#+Name: final-config
+#+BEGIN_SRC emacs-lisp 
+  (defvar *org-publish-website-publishing-directory* "/ssh:username@host:/publish-path/")
+
+  (defvar *org-publish-website-attach-publishing-directory*
+    (concat *org-publish-website-publishing-directory* "attach/"))
+
+  (define-org-publish-project "website-html"
+    :base-directory "~/Website/"
+    :publishing-directory *org-publish-website-publishing-directory*
+    :base-extension "org"
+    :preparation-function #'website/generate-sitemap
+    :recursive t
+    :auto-sitemap nil
+    :htmlized-source t
+    :publishing-function 'org-html-publish-to-html
+    :exclude-tags t
+    :exclude (rx (and "possible/" (zero-or-more any)))
+    :section-numbers nil
+    :html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"http://samflint.com/style/htmlize.css\"/>
+  <link rel=\"stylesheet\" type=\"text/css\" href=\"http://samflint.com/style/style.css\"/>
+  <!-- Piwik -->
+  <script type=\"text/javascript\">
+    var _paq = _paq || [];
+    /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u=\"//piwik.flintfam.org/\";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Piwik Code -->"
+    :html-link-home "http://samflint.com/"
+    :html-link-up "http://samflint.com/"
+    :html-postamble nil
+    :with-toc nil)
+
+  (define-org-publish-project "website-image"
+    :base-directory "~/Website/"
+    :publishing-directory *org-publish-website-publishing-directory*
+    :recursive t
+    :base-extension (rx (or "png" "jpg" "gif" "css" "php"))
+    :include '(".htaccess")
+    :publishing-function 'org-publish-attachment)
+
+  (define-org-publish-project "website-attach"
+    :base-directory "~/Website/attach/"
+    :publishing-directory *org-publish-website-attach-publishing-directory*
+    :recursive t
+    :base-extension (rx (zero-or-more any))
+    :publishing-function 'org-publish-attachment)
+
+  (define-org-publish-project "website"
+    :base-directory "~/Website/"
+    :publishing-directory *org-publish-website-publishing-directory*
+    :components '("website-html" "website-image" "website-attach"))
+#+END_SRC
