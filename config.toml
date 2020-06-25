@@ -7,6 +7,10 @@ enableRobotsTXT = "true"
 disqusShortname = "samflint-com"
 CommentAutoload = "true"
 
+[permalinks]
+    posts = "/:year/:month/:title/"
+    pages = "/pages/:title"
+
 [params]
     #tagline = "the tagline for this website"
 
