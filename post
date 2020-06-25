@@ -1,0 +1,9 @@
+#!/bin/sh
+
+TITLE=$1
+YEAR=$(date +%Y)
+
+FILENAME=posts/"$YEAR"/"$TITLE"/index.org
+
+hugo new $FILENAME
+$EDITOR $FILENAME
