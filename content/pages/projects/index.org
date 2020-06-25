@@ -1,0 +1,24 @@
+---
+title: "Projects"
+date: 2020-06-25T12:27:01-05:00
+draft: false
+---
+
+For the sake of completeness, I'm listing my projects here.
+
+* Current Projects
+
+ - LARCS :: LARCS is The Lisp Automated Rewrite and Calculation System, a rudimentary CAS written in Common Lisp.  As of yet, it's rather incomplete, but building something of this magnitude just takes time!  It's available [[https://git.flintfam.org/swf-projects/LARCS.git][here]].
+ - LispLog :: LispLog is an implementation of Prolog in Lisp, with Lisp-ified syntax and made for use within other programs.  Available [[https://git.flintfam.org/swf-projects/lisp-prolog][here]].
+ - Library Manager :: As a collector of books, I need something to help track what I have.  Instead of building something ridiculous with a full RDBMS and lots of crazy features, I built it with a shell script.  It's available [[https://git.flintfam.org/swf-projects/library][here]].
+ - Emacs Projects :: As an Emacs user, I've built a few different packages to make my life easier.
+   - Pushover.el :: I use the Pushover push notifications service, and because I keep my life organized with Emacs, I want to receive notifications through it.  To do this, I build this slim layer of integration between the two.  Available [[https://git.flintfam.org/swf-projects/emacs-pushover][here]].
+   - Buffer Sets :: I have several specific sets of buffers that I either want opened immediately or want to be able to quickly open.  So I built Buffer Sets to make them easy to manage, loading, unloading, defining and modifying.  Available [[https://git.flintfam.org/swf-projects/buffer-sets][here]].
+
+* Former(-ish) Projects
+
+ - BetterPedals :: Key Pedals because of Emacs Pinky.
+ - CL-Genealogy :: Genealogy database system in Common Lisp.
+ - CL-Ballistics :: Ballistics calculations library in Common Lisp.  Intended to be a line-for-line rewrite of the GNU Ballistics library into Common Lisp.
+ - Records Collector :: An attempt to build an Access-like database system for the web using Common Lisp, SQLite and some other frameworks.  Alas, I don't have time to work on it!
+ - TestamenTeX :: Typeset the Bible using TeX.  Currently incomplete and not particularly good.  No time to improve it at the moment.
