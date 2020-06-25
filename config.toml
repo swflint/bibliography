@@ -10,11 +10,13 @@ theme = "hugo-kiera"
     name = "Samuel W. Flint"           #Author name
     github = "swflint"         #Github username
     #gitlab = ""         #Gitlab username
-    #linkedin = ""       #LinkedIn username
+    linkedin = "swflint"       #LinkedIn username
     #facebook = ""       #Facebook username
     twitter = "SamuelWFlint"        #Twitter username
+    mastodon = "mstdn.io/@swflint"
     #instagram = ""      #Instagram username
-    stackoverflow = ""  #StackOverflow username
+    stackoverflow = "u/2378492"  #StackOverflow username
+    orcid = "0000-0002-8023-9710"
 
 [[menu.main]]
     identifier = "notes"
@@ -25,3 +27,8 @@ theme = "hugo-kiera"
     identifier = "pages"
     name = "Pages"
     url = "/pages/"
+
+[outputFormats]
+  [outputFormats.RSS]
+  mediatype = "application/RSS"
+  baseName = "feed"
