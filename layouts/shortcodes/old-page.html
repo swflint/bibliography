@@ -1,19 +1,19 @@
 {{ $date := .Get "date" }}
-{{ $otherPage := .Get "otherPage" }}
+{{ $newPage := .Get "newPage" }}
 {{ $author := $.Site.Author.name }}
 
 <small>
     <i>
         This post is old, and may no longer reflect my current way of doing things or my current opinions.  It may eventually be deleted or removed.
-        {{- if $otherPage}}
+        {{- if $newPage}}
         Try this instead:
-        <a href="{{ ref . $otherPage }}">
-            {{- with .Site.GetPage $otherPage }}
+        <a href="{{ ref . $newPage }}">
+            {{- with .Site.GetPage $newPage }}
             {{.Title}}            
             {{- end -}}
-        </a>
+        </a>.
         {{- end -}}
-        {{ print "&mdash;" | markdownify }}
+        {{ print "&nbsp;&mdash;&nbsp;" | markdownify }}
         {{- with $.Site.Author.name }}
         {{.}}, <time datetime="{{$date}}">{{ dateFormat "Monday, July 3, 2006" $date }}</time>
         {{- end -}}
