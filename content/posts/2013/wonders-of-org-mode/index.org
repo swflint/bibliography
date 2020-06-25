@@ -4,6 +4,8 @@ date: 2013-10-04T16:20:00-05:00
 draft: false
 ---
 
+{{< old-page date="2020-06-25" >}}
+
 * Intro
 
 Org-mode is a wonderful tool, it allows you to do just about anything!

@@ -4,6 +4,8 @@ date: 2014-02-22T18:35:17-05:00
 draft: false
 ---
 
+{{< old-page date="2020-06-25" >}}
+
 * Intro
 
 Every programmer, or general knowledge worker, has a toolkit.  Often

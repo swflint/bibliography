@@ -4,6 +4,8 @@ date: 2017-12-26T11:52:46-05:00
 draft: false
 ---
 
+{{< old-page date="2020-06-25" >}}
+
 * It's all Static
 
 This whole site --- except for a gallery script --- is static.  I do this for one single reason, I use org-mode and I don't want to deal with getting it and Wordpress to cooperate!  And honestly, it's super easy to set up.
