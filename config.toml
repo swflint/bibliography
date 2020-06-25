@@ -2,7 +2,6 @@ baseURL = "http://samflint.com/"
 languageCode = "en-us"
 title = "Samuel W. Flint"
 theme = "hugo-kiera"
-tagline = ""
 enableRobotsTXT = "true"
 disqusShortname = "samflint-com"
 CommentAutoload = "true"
@@ -12,7 +11,7 @@ CommentAutoload = "true"
     pages = "/pages/:title"
 
 [params]
-    #tagline = "the tagline for this website"
+    tagline = "A tech and academic blog"
 
 [author]
     name = "Samuel W. Flint"
