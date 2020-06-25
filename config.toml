@@ -15,3 +15,8 @@ theme = "hugo-kiera"
     twitter = "SamuelWFlint"        #Twitter username
     #instagram = ""      #Instagram username
     stackoverflow = ""  #StackOverflow username
+
+[[menu.main]]
+    identifier = "notes"
+    name = "Notes"
+    url = "/notes/"
