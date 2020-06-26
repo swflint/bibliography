@@ -49,8 +49,3 @@ copyright = "&copy; Samuel Flint"
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
-
-[outputFormats]
-  [outputFormats.RSS]
-  mediatype = "application/RSS"
-  baseName = "feed"
