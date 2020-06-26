@@ -11,6 +11,25 @@ Academics or not, nerds love to talk about how they work, and what tools they us
 
 * Hardware
 
-* Physical Environment
+** Computers
+
+ - Laptop: Lenovo Yoga 11e.  It's a small, easily packable laptop with a suprisingly comfortable keyboard (as well as a touch screen and "convertible" functionality that I never use).
+ - Desktop: Lenovo ThinkCentre M720q in a Tiny-in-One third-generation 22-inch monitor.
+
+** Peripherals
+
+ - The Keyboard: Kinesis Advantage2 (software layout Programmer's Dvorak, Caps Lock is Backspace).  This keyboard is amazing --- it fits my hands, the key switches are perfect, and the key-stroke programmability mean that I can change keys quickly and easily, which moved some modifiers around to a more convenient location (as well as doubled others).
+ - The Trackball: Because of some RSI scares (and because it freaks people out), I use a Trackball, namely the Elecom EX-G.  It's Japanese, has a total of ten buttons, and fits my hand fairly well.
+ - The Printer: I prefer to edit & read on paper, as well as have frequent need to scan documents.  I use a Brother MFC L2707-DW, which works quite well to print at speed, and produces excellent output.
+
+** Non-Computer Electronics
+
+ - Cell Phone: A generic Android phone, nothing special.  I do use a non-standard home screen, Nova Launcher, however things are otherwise pretty vanilla.
+ - Desk Phone: Western Electric 2500 on AxVoice.  Yes, I still use an old-school phone, in part because it's easier to shoulder so I can do things while talking to someone.
+ - External Cryptographic Hardware: NitroKey Pro.  My GPG Key is kept on one of these, and they're great little devices, I only wish they came in a retractable version.
+ - Fitness Tracker: Whoop Band 3.0.  For hardware that requires a paid service it's great.
+ - Earbuds & Headphones: Trekz Air & Soundcore Spirit Pro.
+
+* Physical Environment & Accessories
 
 * Methods
