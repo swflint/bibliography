@@ -1,0 +1,3 @@
+#!/bin/sh
+
+git subtree pull --prefix themes/hugo-kiera theme master --squash
