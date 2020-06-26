@@ -14,6 +14,7 @@ copyright = "&copy; Samuel Flint"
     tagline = "A tech and academic blog"
     show_comments = "true"
     commentAutoload = "true"
+    favicon = "favicon.ico"
 
 [author]
     name = "Samuel W. Flint"
