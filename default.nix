@@ -12,7 +12,10 @@ stdenv.mkDerivation rec {
 
   buildPhase = "hugo";
 
-  installPhase = "cp -r public $out";
+  installPhase = ''
+    mkdir -pv $out/nix-support/
+    cp -r public $out
+  '';
 
   meta = with lib; {
     description = "My personal website";
