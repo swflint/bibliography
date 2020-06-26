@@ -2,6 +2,7 @@
 title: "Publishing This Website"
 date: 2020-06-25T15:36:46-05:00
 draft: false
+tags: ['website', 'hugo', 'orgmode']
 ---
 
 I've recently changed how I publish my website.  I had previously used the Org Publish system (see [[{{< ref "posts/2017/publishing-my-website/index.org" >}}][here]]), but I recently decided to update to use the [[https://gohugo.io][Hugo]] site generator.  In part, I chose to switch because the old system was slow, but I chose for several other reasons.  I'll explain why first, and then talk about part of how I have things set up.

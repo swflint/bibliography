@@ -2,6 +2,7 @@
 title: "Wonders of Org Mode"
 date: 2013-10-04T16:20:00-05:00
 draft: false
+tags: ['programming', 'orgmode', 'emacs', 'productivity']
 ---
 
 {{< old-page date="2020-06-25" >}}

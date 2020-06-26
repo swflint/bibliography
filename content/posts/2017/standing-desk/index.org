@@ -2,6 +2,7 @@
 title: "Standing Desk"
 date: 2017-12-28T13:11:00-05:00
 draft: false
+tags: ['productivity', 'hardware']
 ---
 
 * Hardware

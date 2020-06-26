@@ -2,6 +2,7 @@
 title: "Knuth Check"
 date: 2015-07-06
 draft: false
+tags: ['theory', 'knuth']
 ---
 
 * Wait, what?

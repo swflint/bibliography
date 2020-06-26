@@ -2,6 +2,7 @@
 title: "How I Work"
 date: 2017-12-05T10:59:38-05:00
 draft: false
+tags: ['productivity', 'emacs', 'orgmode']
 ---
 
 {{< old-page date="2020-06-25" >}}
