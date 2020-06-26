@@ -26,6 +26,11 @@ copyright = "&copy; Samuel Flint"
     orcid = "0000-0002-8023-9710"
 
 [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/pages/about/"
+
+[[menu.main]]
     identifier = "notes"
     name = "Notes"
     url = "/notes/"
@@ -34,6 +39,16 @@ copyright = "&copy; Samuel Flint"
     identifier = "pages"
     name = "Pages"
     url = "/pages/"
+
+[[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+
+[[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
 
 [outputFormats]
   [outputFormats.RSS]
