@@ -5,7 +5,7 @@ draft: false
 tags: ['orgmode', 'productivity', 'hardware']
 ---
 
-{{< old-page date="2020-06-25" >}}
+{{< old-page date="2020-06-25" newPage="posts/2017/switching-to-nixos/index.org" >}}
 
 * Intro
 
