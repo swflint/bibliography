@@ -7,6 +7,8 @@ tags: ['emacs', 'org-mode' , 'productivity']
 
 Academics or not, nerds love to talk about how they work, and what tools they use.  I've written about it [[{{< ref "posts/2017/how-i-work/index.org" >}}][before]], but I'd like to clean it up, and discuss how things have changed, kinda.  I'll talk about the "big four", /i.e./, software, hardware, physical environment and methods.
 
+* Methods
+
 * Software
 
 * Hardware
@@ -47,4 +49,3 @@ Academics or not, nerds love to talk about how they work, and what tools they us
 
 Lots of it, Chemex, fresh ground, local beans.
 
-* Methods
