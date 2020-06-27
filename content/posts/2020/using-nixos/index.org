@@ -5,7 +5,7 @@ draft: false
 tags: ['nixos', 'productivity', 'hardware']
 ---
 
-Like most GNU/Linux users, I'm a partisan in the Grand Distribution War.  I have my preferences, and I've talked about them before [[{{< ref "posts/2017/switching-to-nixos/index.org" >}}][here]] and [[{{< ref "posts/2014/whats-in-your-toolkit/index.org">}}][here]].  I started with Ubuntu, moved to Fedora/CentOS and finally it seems, have settled on NixOS for most of my systems.
+Like most GNU/Linux users, I'm a partisan in the Grand Distribution War.  I have my preferences, and I've talked about them before [[{{< ref "posts/2017/switching-to-nixos/index.org" >}}][here]] and [[{{< ref "posts/2014/whats-in-your-toolkit/index.org">}}][here]].  I started with Ubuntu, moved to Fedora/CentOS and finally it seems, have settled on [[https://nixos.org/][NixOS]] for most of my systems.
 
 * Why NixOS?
 
