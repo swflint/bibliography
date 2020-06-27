@@ -5,7 +5,7 @@ draft: false
 tags: ['productivity', 'emacs', 'orgmode']
 ---
 
-{{< old-page date="2020-06-25" >}}
+{{< old-page date="2020-06-25" newPage="posts/2020/what-i-work-with/index.org" >}}
 
 * Hardware
 
