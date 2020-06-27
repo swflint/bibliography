@@ -5,25 +5,24 @@ draft: true
 tags: ['emacs', 'org-mode' , 'productivity']
 ---
 
-Academics or not, nerds love to talk about how they work, and what tools they use.  I've written about it [[{{< ref "posts/2017/how-i-work/index.org" >}}][before]], but I'd like to clean it up, and discuss how things have changed, kinda.  I'll talk about the "big four", /i.e./, software, hardware, physical environment and methods.
-
-* Methods
+Academics or not, nerds love to talk about how they work, and what tools they use.  I've written about it [[{{< ref "posts/2017/how-i-work/index.org" >}}][before]], but I'd like to clean it up, and discuss how things have changed.  I'll talk about what software and hardware I use, as well as what my environment is like, and what non-tech things I use.  Eventually, I'll get around to writing about /how/ I work, but until then, here's what I use.
 
 * Software
 
 ** Primary Computers
 
- - Editor: Emacs
- - Task Management, GTD, etc: Org-mode
- - Email & News: GNUS
- - Bibliography Management: ebib
- - RSS: Elfeed
+ - OS: [[{{< ref "posts/2020/using-nixos/index.org">}}][NixOS]]
+ - Editor: [[https://www.gnu.org/software/emacs/][GNU Emacs]]
+ - Task Management, GTD, etc: [[https://orgmode.org/][Org Mode]]
+ - Email & News: [[https://gnus.org/][GNUS]]
+ - Bibliography Management: [[http://joostkremers.github.io/ebib/][ebib]]
+ - RSS: [[https://github.com/skeeto/elfeed][elfeed]]
  - Browser: Chromium
 
 ** Mobile
 
- - Music & Podcasts: Spotify for podcasts primarily, but some music.  Idagio for classical music.
- - SSH/Mosh client: Termius
+ - Music & Podcasts: Spotify for podcasts primarily, but some music.  [[https://idagio.com/][Idagio]] for classical music.
+ - SSH/Mosh client: [[https://termius.com/][Termius]]
 
 * Hardware
 
