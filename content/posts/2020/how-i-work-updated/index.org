@@ -11,6 +11,15 @@ Academics or not, nerds love to talk about how they work, and what tools they us
 
 * Software
 
+** Primary Computers
+
+ - Editor: Emacs
+ - Task Management, GTD, etc: Org-mode
+ - Email & News: GNUS
+ - Bibliography Management: ebib
+ - RSS: Elfeed
+ - Browser: Chromium
+
 ** Mobile
 
  - Music & Podcasts: Spotify for podcasts primarily, but some music.  Idagio for classical music.
