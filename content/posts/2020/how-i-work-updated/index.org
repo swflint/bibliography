@@ -11,6 +11,11 @@ Academics or not, nerds love to talk about how they work, and what tools they us
 
 * Software
 
+** Mobile
+
+ - Music & Podcasts: Spotify for podcasts primarily, but some music.  Idagio for classical music.
+ - SSH/Mosh client: Termius
+
 * Hardware
 
 ** Computers
