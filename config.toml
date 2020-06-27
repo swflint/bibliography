@@ -15,6 +15,7 @@ copyright = "&copy; Samuel Flint"
     show_comments = "true"
     commentAutoload = "true"
     favicon = "favicon.ico"
+    mathjax = true
 
 [author]
     name = "Samuel W. Flint"
