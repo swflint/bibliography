@@ -7,7 +7,7 @@ disqusShortname = "samflint-com"
 copyright = "&copy; Samuel Flint"
 
 [permalinks]
-    posts = "/:year/:month/:title/"
+    posts = "/posts/:year/:month/:day/:title/"
     pages = "/pages/:title"
 
 [params]
