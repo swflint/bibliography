@@ -1,4 +1,4 @@
-baseURL = "http://samflint.com/"
+baseURL = "https://samflint.com/"
 languageCode = "en-us"
 title = "Samuel W. Flint"
 theme = "hugo-kiera"

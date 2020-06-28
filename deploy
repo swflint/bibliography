@@ -1,7 +1,7 @@
 #!/bin/sh
 
 USER=swflint
-HOST=kernighan.flintfam.org
+HOST=lhopital.flintfam.org
 DIR=/var/www/samflint.com
 
 hugo || exit
