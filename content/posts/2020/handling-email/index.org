@@ -1,0 +1,12 @@
+---
+title: "Handling Email"
+date: 2020-07-09T19:37:53-05:00
+draft: true
+tags: ['emacs', 'organization', 'productivity', 'org-mode', 'email']
+---
+
+Almost everyone has to deal with email, and to be honest, it kinda sucks.  Granted, so would dealing with all the email I get as hard-copy, but at least with email, there aren't anywhere /near/ as many trees that get killed/used.  But, dealing with email is still tough, and potentially quite time-consuming.  As an avid Emacs user, you can guess how I read my email --- in Emacs.  I'll talk a bit about my server-side mail infrastructure as well as the client-side handling in Gnus.
+
+* The Server-Side
+
+* Email in Emacs with GNUS
