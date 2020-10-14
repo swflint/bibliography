@@ -1,0 +1,10 @@
+---
+title: "Privacy"
+date: 2020-10-14T13:14:02-0500
+draft: false
+disableComments: "true"
+---
+
+I use a personally hosted Matomo instance for some basic analytics.  Note, that if you are interested in opting out, you may do so here.
+
+{{< matomo-optout >}}

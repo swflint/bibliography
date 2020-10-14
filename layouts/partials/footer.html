@@ -2,7 +2,9 @@
 <footer>
     <h6>{{ .Site.Copyright | markdownify }} |
         {{ T "rendered" }} <a href="https://gohugo.io" title="Hugo">Hugo</a> |
-        <a href="{{.Site.BaseURL}}index.xml">{{ T "subscribe" }} </a></h6>
+        <a href="{{.Site.BaseURL}}index.xml">{{ T "subscribe" }} </a> |
+        <a href="{{ ref . "/pages/privacy/index.org" }}"> Privacy </a>
+    </h6>
 </footer>
 </div>
 <script src="{{ "js/scripts.js" | relURL }}"></script>
