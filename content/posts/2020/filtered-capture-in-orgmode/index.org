@@ -1,0 +1,54 @@
+---
+title: "Filtered Capture in Orgmode"
+date: 2020-10-17T16:06:18-05:00
+draft: false
+---
+
+I've talked about how I [[{{< ref "posts/2020/reading-and-keeping-notes/index.org" >}}][manage notes from reading]], and a bit about [[{{< ref "posts/2020/what-i-work-with/index.org" >}}][how I work]].  Part of managing my reading list involves the Org Capture facility.  I've got a set of templates (the reason I submitted [[https://code.orgmode.org/bzg/org-mode/commit/d06aa486d6c3163b6ef6e9ab665117bd93dff34a][this patch]]) that I use to add to a TODO list.  These are under a hierarchy of capture templates "p", normally only allowed to be called in ~ebib-index~ or ~ebib-entry~ modes.  But I don't want to have to select that hierarchy every time I want to add a paper to the list.
+
+To this end, I've written a couple of fairly simple functions to create what are, effectively, local capture commands.  We'll look at the two separately.
+
+The first of these is ~org-capture-filter-prefixed-templates~, which takes a single argument, the prefix to ensure we keep.  We filter first everything that matches this prefix, remove the prefix declaration itself, and remove the prefix from each template declaration.  Because we're using functional programming, only new sequences are created (in theory), and the original list of templates is never changed.
+
+#+Caption: Filter Templates by Prefix
+#+Name: filter-templates-by-prefix
+#+BEGIN_SRC emacs-lisp 
+  (defun org-capture-filter-prefixed-templates (prefix-keys)
+    (mapcar #'(lambda (template)
+                (let ((key (first template)))
+                  (cons (substring key (length prefix-keys))
+                        (rest template))))
+            (remove-if (lambda (key-sequence)
+                         (string= prefix-keys key-sequence))
+                       (remove-if-not (lambda (key-sequence)
+                                        (string-prefix-p prefix-keys key-sequence))
+                                      org-capture-templates
+                                      :key #'first)
+                       :key #'first)))
+#+END_SRC
+
+The last bit is ~org-capture-filtered~, which can be used in an interactive function (a/k/a a command), which automatically filters the templates based on the prefix, and applies any new, custom context rules.  It'll interactively call ~org-capture~ with the new bindings for ~org-capture-templates~ and custom context rules in scope.
+
+#+Caption: Capture By Prefix
+#+Name: capture-by-prefix
+#+BEGIN_SRC emacs-lisp 
+  (defun org-capture-filtered (filter-prefix &optional context-rules)
+    (let ((org-capture-templates (org-capture-filter-prefixed-templates filter-prefix))
+          (org-capture-templates-contexts context-rules))
+      (call-interactively #'org-capture)))
+#+END_SRC
+
+Eventually, it may make sense to write some code to auto-filter the context rules and merge with the custom ones that are passed in.  Oh well.
+
+This bit has already found use in my setup, in ~ebib~, I have the following:
+
+#+Caption: Ebib Capture Paper
+#+Name: ebib-capture-paper
+#+BEGIN_SRC emacs-lisp 
+  (defun my/ebib-org-capture ()
+    (interactive)
+    (org-capture-filtered "p" nil))
+
+  (define-key ebib-entry-mode-map (kbd "M-c") #'my/ebib-org-capture)
+  (define-key ebib-index-mode-map (kbd "M-c") #'my/ebib-org-capture)
+#+END_SRC
