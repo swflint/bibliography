@@ -1,0 +1,19 @@
+---
+title: "Sync It"
+date: 2020-10-18T13:20:05-05:00
+draft: false
+tags: ["productivity", "programming", "organization"]
+---
+
+I'm pleased to announce the first release of my synchronization utility, [[https://github.com/swflint/sync-it][~sync-it~]].  This is a replacement for the ~mr~, or [[https://myrepos.branchable.com][MyRepos]] utility, which is written in Perl, and natively supports a handful of repository types.  However, it's hard to extend well, and less than flexible in adding new repository types.
+
+~sync-it~ is written in Rust (as an excuse to learn the language and tooling), and distributed as a [[https://www.tweag.io/blog/2020-05-25-flakes/][Nix Flake]].  The configuration is written in TOML, and entirely manipulatable through the application.  It does not, by default, know about /any/ sort of repository, so you'll need to configure them.  All repository types are defined by a set of command templates, with ~{{location}}~ being the location of the repository constantly available.  Any other fields can be used, just make sure to add that option to the configuration of repositories of this type.
+
+Installation on NixOS is simple, assuming that flakes and the ~nix profile~ command are enabled, just:
+
+ - Add the flake to the registry: ~nix registry add sync-it github:swflint/sync-it~
+ - And install it in your profile: ~nix profile install 'sync-it#sync-it'~
+
+While the application needs a bit more documentation, the interface is fairly self-documenting, and provides quite a bit of help.
+
+Hopefully this application is helpful to others, not just me!
