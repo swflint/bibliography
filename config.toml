@@ -5,6 +5,7 @@ theme = ["hugo-kiera", "matomo"]
 enableRobotsTXT = "true"
 disqusShortname = "samflint-com"
 copyright = "&copy; Samuel Flint"
+enableGitInfo = "true"
 
 [permalinks]
     posts = "/posts/:year/:month/:day/:title/"
