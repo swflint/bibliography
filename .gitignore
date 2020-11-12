@@ -1,54 +1,15 @@
-# -*- mode: gitignore; -*-
-.*
-!.gitignore
-!.gitmodules
-!.gitkeep
-
-!.htaccess
-
-/public/
-/result
-
-# Emacs Stuff
+public/
+npm_modules/
+node_modules/
+.npm
+bower_components
+trash
+Error.log
+.DS_Store
+.sass-cache
+.tmp
+.rvmrc
+.trashes
+.data
+.config
 *~
-\#*\#
-/.emacs.desktop
-/.emacs.desktop.lock
-*.elc
-auto-save-list
-tramp
-.\#*
-
-# Org-mode
-.org-id-locations
-*_archive
-
-# flymake-mode
-*_flymake.*
-
-# eshell files
-/eshell/history
-/eshell/lastdir
-
-# elpa packages
-/elpa/
-
-# reftex files
-*.rel
-
-# AUCTeX auto folder
-/auto/
-*/auto/
-
-# cask packages
-.cask/
-dist/
-
-# Flycheck
-flycheck_*.el
-
-# server auth directory
-/server/
-
-# projectiles files
-.projectile
