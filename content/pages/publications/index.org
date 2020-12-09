@@ -4,5 +4,10 @@ date: 2020-12-09T12:22:00-06:00
 draft: true
 ---
 
-{{< publications title="Conference Papers" type="papers">}}
+{{< publications title="Conference Papers" type="papers" >}}
 
+{{< publications title="Journal Articles" type="journal" >}}
+
+{{< publications title="Workshop Papers" type="workshop" >}}
+
+{{< publications title="Technical Reports" type="report">}}
