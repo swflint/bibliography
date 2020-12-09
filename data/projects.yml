@@ -40,3 +40,15 @@
      This is the **L**isp **A**utomated **R**ewrite and
      **C**alculation **S**ystem, a fairly simple CAS written in Common
      Lisp, leveraging the Common Lisp Object System.
+
+ - name: LibraryManager
+   status: current
+   link:
+     href: https://git.flintfam.org/swf-projects/library
+     name: Git Repo
+   description:
+     To help manage my collection of books, I've written a
+     [recutils](https://www.gnu.org/software/recutils/) powered
+     shell-script that helps to keep track.  It's got reporting,
+     query, and loan functionality, and I'm working on adding paper
+     periodical management as well.
