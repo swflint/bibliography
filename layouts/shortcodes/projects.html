@@ -1,0 +1,10 @@
+{{ $title := .Get "title" }}
+{{ $status := .Get "status"}}
+
+<h3>{{$title}}</h3>
+
+<dl>
+    {{ range where .Site.Data.projects "status" $status }}
+    {{ partial "project.html" . }}    
+    {{ end }}
+</dl>

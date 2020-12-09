@@ -1,0 +1,7 @@
+<dt>{{ .name | markdownify }}</dt>
+<dd>
+    {{ if isset . "link" }}
+    Link: <a href="{{ .link.href }}">{{ .link.name | markdownify }}</a><br/>
+    {{end}}
+    {{ .description | markdownify }}
+</dd>
