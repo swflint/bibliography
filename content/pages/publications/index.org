@@ -1,0 +1,8 @@
+---
+title: "Publications"
+date: 2020-12-09T12:22:00-06:00
+draft: true
+---
+
+{{< publications title="Conference Papers" type="papers">}}
+

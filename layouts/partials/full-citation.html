@@ -1,0 +1,8 @@
+{{partial "name-list.html" .author}}
+"{{ .title | markdownify }}".
+{{if .booktitle }}In: <em>{{.booktitle|markdownify}}</em>.{{end}}
+{{if .editor}}Ed. {{partial "name-list.html" .editor}}{{end}}
+{{if .date}}{{.date|markdownify}}.{{end}}
+{{if .status}}{{.status|markdownify}}.{{end}}
+{{if .doi}}<a href="https://dx.doi.org/{{.doi}}">doi:{{.doi}}</a>.{{end}}
+{{if .url}}<a href="{{.url}}">{{.url}}</a>{{end}}

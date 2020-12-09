@@ -1,0 +1,11 @@
+{{ $title := .Get "title" }}
+{{ $type := .Get "type"}}
+
+{{if isset .Site.Data.publications $type}}
+<h1>{{$title}}</h1>
+<ul>
+    {{ range (index .Site.Data.publications $type) }}
+    <li>{{ partial "full-citation.html" . }}</li>
+    {{ end }}
+</ul>
+{{end}}
