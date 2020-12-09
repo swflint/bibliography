@@ -64,3 +64,14 @@
      Emacs for **everything**, including sending notifications for
      upcoming appointments.  When I first started doing this, there
      was no Emacs integration for Pushover, so I wrote it.
+
+ - name: Buffer Sets
+   status: current
+   link:
+     href: https://git.flintfam.org/swf-projects/buffer-sets
+     name: Git Repo
+   description:
+     This is an alternative way of managing sets of buffers that Emacs
+     should load at once.  It's fairly simple, but it serves a need --
+     collecting files that aren't part of a unified project, but need
+     opened at the same time.
