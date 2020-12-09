@@ -20,3 +20,13 @@
      for mathematics, the ability to include an ORCiD social icon, use
      of/support for "last modified" dates, and a more configurable
      footer.
+
+ - name: Sync-It
+   status: current
+   link:
+     href: https://github.com/swflint/sync-it
+     name: Git Repo
+   description:
+     A configurable multi-repository synchronization tool with easy
+     support for many kinds of repositories.  This was my first
+     project in Rust, and I found it to be fairly interesting.
