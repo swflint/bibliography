@@ -86,3 +86,14 @@
      in Common Lisp.  Due to other demands, it never really got off
      its feet.  Eventually, maybe, I'll get around to working on it
      again.
+
+ - name: BetterPedals
+   status: former-hidden
+ - name: cl-genealogy
+   status: former-hidden
+ - name: cl-ballistics
+   status: former-hidden
+ - name: Records Collector
+   status: former-hidden
+ - name: TestamenTeX
+   status: former-hidden
