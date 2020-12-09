@@ -52,3 +52,15 @@
      shell-script that helps to keep track.  It's got reporting,
      query, and loan functionality, and I'm working on adding paper
      periodical management as well.
+
+ - name: pushover.el
+   status: current
+   link:
+     href: https://git.flintfam.org/swf-projects/emacs-pushover
+     name: Git Repo
+   description:
+     The [Pushover](https://pushover.net/) service provides a REST API
+     for sending push notifications to various devices.  Because I use
+     Emacs for **everything**, including sending notifications for
+     upcoming appointments.  When I first started doing this, there
+     was no Emacs integration for Pushover, so I wrote it.
