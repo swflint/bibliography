@@ -30,3 +30,13 @@
      A configurable multi-repository synchronization tool with easy
      support for many kinds of repositories.  This was my first
      project in Rust, and I found it to be fairly interesting.
+
+ - name: LARCS
+   status: current
+   link:
+     href: https://git.flintfam.org/swf-projects/larcs
+     name: Git Repo
+   description:
+     This is the **L**isp **A**utomated **R**ewrite and
+     **C**alculation **S**ystem, a fairly simple CAS written in Common
+     Lisp, leveraging the Common Lisp Object System.
