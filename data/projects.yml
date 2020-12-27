@@ -21,6 +21,16 @@
      of/support for "last modified" dates, and a more configurable
      footer.
 
+ - name: theme-changer
+   status: current
+   link:
+     href: https://github.com/hadronzoo/theme-changer
+     name: Git Repo
+   description:
+     This Emacs package uses sunrise and sunset time to change to day
+     and night themes automatically.  I've recently (December 2020)
+     taken over as maintainer of the project.
+
  - name: Sync-It
    status: current
    link:
