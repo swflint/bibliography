@@ -40,7 +40,7 @@ enableGitInfo = "true"
 [[menu.main]]
     identifier = "notes"
     name = "Notes"
-    url = "/notes/"
+    url = "https://notes.samflint.com/"
 
 [[menu.main]]
     identifier = "pages"
