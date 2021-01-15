@@ -18,6 +18,15 @@
      support for many kinds of repositories.  This was my first
      project in Rust, and I found it to be fairly interesting.
 
+ - name: track-calorie-values
+   link:
+     href: https://git.sr.ht/~swflint/track-calorie-values
+     name: Git Repo
+   description:
+     This Emacs package makes collection of dietary tracking
+     information easier, by caching previously entered foodstuffs and
+     their nutritional data
+
  - name: LARCS
    status: current
    link:
