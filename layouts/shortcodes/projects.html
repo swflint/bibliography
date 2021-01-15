@@ -1,10 +1,11 @@
 {{ $title := .Get "title" }}
 {{ $status := .Get "status"}}
 
+{{ if isset .Site.Data.projects $status }}
 <h3>{{$title}}</h3>
-
 <dl>
-    {{ range where .Site.Data.projects "status" $status }}
+    {{ range (index .Site.Data.projects $status) }}
     {{ partial "project.html" . }}    
     {{ end }}
 </dl>
+{{ end }}

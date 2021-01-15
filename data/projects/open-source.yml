@@ -1,0 +1,22 @@
+ - name: NixOS
+   status: open-source
+   link:
+     href: https://github.com/NixOS/nixpkgs/commits?author=swflint
+     name: Contributions
+   description:
+     NixOS is a distribution of GNU/Linux that uses an entirely
+     different model for package management and configuration.
+     Configuration is entirely declarative, with reproducibility one
+     of the most significant goals of the project.  I package a couple
+     of programs, and have contributed some minor bug-fixes to others.
+
+ - name: Kiera Theme for Hugo
+   status: open-source
+   link:
+     href: https://github.com/funkydan2/hugo-kiera/commits?author=swflint
+     name: Contributions
+   description:
+     This is the theme that runs this blog.  I've contributed support
+     for mathematics, the ability to include an ORCiD social icon, use
+     of/support for "last modified" dates, and a more configurable
+     footer.

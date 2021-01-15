@@ -1,26 +1,3 @@
- - name: NixOS
-   status: open-source
-   link:
-     href: https://github.com/NixOS/nixpkgs/commits?author=swflint
-     name: Contributions
-   description:
-     NixOS is a distribution of GNU/Linux that uses an entirely
-     different model for package management and configuration.
-     Configuration is entirely declarative, with reproducibility one
-     of the most significant goals of the project.  I package a couple
-     of programs, and have contributed some minor bug-fixes to others.
-
- - name: Kiera Theme for Hugo
-   status: open-source
-   link:
-     href: https://github.com/funkydan2/hugo-kiera/commits?author=swflint
-     name: Contributions
-   description:
-     This is the theme that runs this blog.  I've contributed support
-     for mathematics, the ability to include an ORCiD social icon, use
-     of/support for "last modified" dates, and a more configurable
-     footer.
-
  - name: theme-changer
    status: current
    link:
@@ -85,25 +62,3 @@
      should load at once.  It's fairly simple, but it serves a need --
      collecting files that aren't part of a unified project, but need
      opened at the same time.
-
- - name: LispLog
-   status: former
-   link:
-     href: https://git.flintfam.org/swf-projects/lisp-prolog
-     name: Git Repo
-   description:
-     This is an attempt at an implementation of Prolog-style inference
-     in Common Lisp.  Due to other demands, it never really got off
-     its feet.  Eventually, maybe, I'll get around to working on it
-     again.
-
- - name: BetterPedals
-   status: former-hidden
- - name: cl-genealogy
-   status: former-hidden
- - name: cl-ballistics
-   status: former-hidden
- - name: Records Collector
-   status: former-hidden
- - name: TestamenTeX
-   status: former-hidden
