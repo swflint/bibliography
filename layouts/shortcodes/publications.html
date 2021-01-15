@@ -3,7 +3,7 @@
 {{ $partial_name := printf "cites/%s.html" $type }}
 
 {{if isset .Site.Data.publications $type}}
-<h1>{{$title}}</h1>
+<h3>{{$title}}</h3>
 <ul>
     {{ range (index .Site.Data.publications $type) }}
     {{ if not .hide }}
