@@ -6,3 +6,4 @@
 {{if .status}}{{.status|markdownify}}.{{end}}
 {{if .doi}}<a href="https://dx.doi.org/{{.doi}}">doi:{{.doi}}</a>.{{end}}
 {{if .url}}<a href="{{.url}}">{{.url}}</a>{{end}}
+{{if .pdf}}(<a href="{{.pdf}}">PDF</a>){{end}}

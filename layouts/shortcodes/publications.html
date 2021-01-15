@@ -1,11 +1,14 @@
 {{ $title := .Get "title" }}
 {{ $type := .Get "type"}}
+{{ $partial_name := printf "cites/%s.html" $type }}
 
 {{if isset .Site.Data.publications $type}}
 <h1>{{$title}}</h1>
 <ul>
     {{ range (index .Site.Data.publications $type) }}
-    <li>{{ partial "full-citation.html" . }}</li>
+    {{ if not .hide }}
+    <li>{{ partial $partial_name . }}</li>
+    {{ end }}
     {{ end }}
 </ul>
 {{end}}
