@@ -16,4 +16,17 @@
    date: May 4--8, 2021
    status: Submitted
    doi: "10.100/10.100"
-
+   hide: true
+ - author:
+     - name: Samuel W. Flint
+       highlight: true
+     - name: Jigyasa Chauhan
+     - name: Robert Dyer
+   title: "Escaping the Time Pit: Pitfalls and Guidelines for Using Time-Based Data"
+   booktitle: ETC
+   editor:
+      - name: ETC
+   date: ETC
+   status: Submitted
+   doi: "10.100/10.100"
+   hide: false
