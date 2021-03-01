@@ -1,2 +1,0 @@
-{{ partial "name-list.html" .author }}
-{{ .year }}.  {{ .title }}. In <i>{{ if .booktitle }}{{ .booktitle }}{{ end }}</i>, {{ .date | markdownify }}{{if .location }}, {{ .location }}{{ end }}. {{ if .publisher }}{{ .publisher }}.{{end}}  {{if .pages}}{{ .pages }}.{{end}}  {{ if .status }}<i>{{ .status }}</i>{{ end }}  {{ partial "doi.html" . }}
