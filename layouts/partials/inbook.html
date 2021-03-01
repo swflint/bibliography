@@ -1,2 +1,2 @@
-{{if .author }}{{ partial "name-list.html" .author }}{{ else }}{{ partial "name-list.html" .editor}} (Ed.){{ end }}.
-{{ .year }}. <i>{{ .title }}</i>{{if .edition }}({{ .edition }}){{end}}. {{ .series_title }}, Vol. {{ .volume }}. {{ .publisher }}.  {{ partial "doi.html" . }}
+{{if .author }}{{ partial "utils/name-list.html" .author }}{{ else }}{{ partial "utils/name-list.html" .editor}} (Ed.){{ end }}.
+{{ .year }}. <i>{{ .title }}</i>{{if .edition }}({{ .edition }}){{end}}. {{ .series_title }}, Vol. {{ .volume }}. {{ .publisher }}.  {{ partial "utils/doi.html" . }}
