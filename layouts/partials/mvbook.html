@@ -1,0 +1,3 @@
+{{ partial "name-list.html" .author }}
+{{ .year }}. {{ .title }}, {{ .volume }}: {{ .booktitle }}{{ if .edition }}, ({{.edition}}){{ end }}. {{ .publisher }}
+{{ partial "doi.html" . }}
