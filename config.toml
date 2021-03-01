@@ -36,28 +36,34 @@ enableGitInfo = "true"
     identifier = "about"
     name = "About"
     url = "/pages/about/"
+    weight = 1
+
+[[menu.main]]
+    identifier = "publications"
+    name = "Publications"
+    url = "/pages/publications/"
+    weight = 2
 
 [[menu.main]]
     identifier = "projects"
     name = "Projects"
     url = "/pages/projects/"
-
-[[menu.main]]
-    identifier = "notes"
-    name = "Notes"
-    url = "https://notes.samflint.com/"
+    weight = 3
 
 [[menu.main]]
     identifier = "pages"
     name = "Pages"
     url = "/pages/"
+    weight = 4
 
 [[menu.main]]
     identifier = "posts"
     name = "Posts"
     url = "/posts/"
+    weight = 5
 
 [[menu.main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
+    weight = 6
