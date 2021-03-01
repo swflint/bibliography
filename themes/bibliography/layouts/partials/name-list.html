@@ -1,0 +1,2 @@
+{{$len :=  sub (len .)  1}}
+{{ range $num, $name := . }}{{if eq $num $len }}, and {{ else if ne 0 $num }}, {{else}}{{ end }}{{if isset $name "highlight"}}<b>{{$name.name}}</b>{{else}}{{$name.name}}{{end}}{{end}}.
