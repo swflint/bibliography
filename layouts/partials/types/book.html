@@ -1,2 +1,3 @@
+{{ partial "utils/anchor.html" . }}
 {{ partial "utils/name-list.html" .author }}
 {{ .year }}. <i>{{ .title }}</i>{{if .edition }}({{ .edition }}){{end}}.  {{ .publisher }} {{ partial "utils/doi.html" .}}
