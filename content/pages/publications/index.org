@@ -4,10 +4,8 @@ date: 2021-02-23T21:22:00-06:00
 draft: false
 ---
 
-{{< publications title="Conference Papers" type="inproceedings" >}}
+{{< publications-of-type title="Conference Papers" type="inproceedings" >}}
 
-{{< publications title="Journal Articles" type="journal" >}}
+{{< publications-of-type title="Journal Articles" type="journal" show=false >}}
 
-{{< publications title="Workshop Papers" type="workshop" >}}
-
-{{< publications title="Technical Reports" type="report">}}
+{{< publications-of-type title="Technical Reports" type="report" show=false >}}

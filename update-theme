@@ -2,3 +2,4 @@
 
 git subtree pull --prefix themes/hugo-kiera https://github.com/funkydan2/hugo-kiera.git master --squash
 git subtree pull --prefix themes/matomo https://github.com/holehan/hugo-component-matomo.git master --squash
+git subtree pull --prefix themes/bibliography/ https://github.com/swflint/bibliography.git master --squash
