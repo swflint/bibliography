@@ -3,7 +3,7 @@ other = "Categories:"
 
 [readingTime]
 one = "One minute read"
-other = "{{.Count}} minutes read"
+other = "{{.Count}} minute read"
 
 [readMore]
 other = "Read more…"
@@ -21,4 +21,4 @@ other = "Rendered by"
 other = "Add/View Comments"
 
 [modifiedOn]
-other = "modified on"
+other = "Modified on"
