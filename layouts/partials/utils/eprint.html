@@ -1,0 +1,5 @@
+{{ if .eprint }}
+{{ if eq .eprint.type "arxiv" }}
+Preprint: <a href="https://arxiv.org/abs/{{ .eprint.identifier }}">arXiv:{{ .eprint.identifier }} {{ if .eprint.class }}[{{ .eprint.class }}]{{ end }}</a>.
+{{ end }}
+{{ end }}
