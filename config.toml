@@ -3,7 +3,6 @@ languageCode = "en-us"
 title = "Samuel W. Flint"
 theme = ["hugo-kiera", "matomo", "bibliography"]
 enableRobotsTXT = "true"
-disqusShortname = "samflint-com"
 copyright = "&copy; Samuel Flint"
 enableGitInfo = "true"
 
@@ -13,8 +12,6 @@ enableGitInfo = "true"
 
 [params]
     tagline = "A tech and academic blog"
-    show_comments = "true"
-    commentAutoload = "true"
     favicon = "/favicon.ico"
     mathjax = true
 
