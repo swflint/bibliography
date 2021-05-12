@@ -10,11 +10,3 @@ My name is Sam Flint.  I'm currently a PhD student at the University of Nebraska
 
 Outside of the academic, I'm a firm supporter of Free Software, and contribute to several projects, as well as maintain some of my own (see [[{{< ref "pages/projects/index.org">}}][here]]), and am an ardent Emacs user.  My other hobbies include cooking, baking, antique collecting and as of late, bicycling.
 
-* PGP
-
-I'm an avid user of PGP, and enjoy the benefits of its use for message security and maintenance of privacy.  If you are capable of doing so, please sign your messages or even encrypt them.  My key is available on ~hkp://pool.sks-keyservers.net~, my key ID is ~FA13D704~ (also available [[file:/attach/FA13D704.asc][here]]).
-
-Watch here for notification of Key Revocation.  The following keys have been revoked:
-
- - 266596F4 revoked and superceded by 2E2B259F.  Statement is [[file:/attach/rev-sup-266596F4.txt][here]].
- - 2E2B259F revoked and superceded by FA13D704.  Statement is [[file:/attach/rev-sup-2E2B259F.txt][here]].

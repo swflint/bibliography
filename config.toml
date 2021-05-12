@@ -1,9 +1,7 @@
 baseURL = "https://samuelwflint.com/"
 languageCode = "en-us"
-title = "Samuel W. Flint"
-theme = ["hugo-kiera", "matomo", "bibliography"]
+theme = ["anatole", "bibliography"]
 enableRobotsTXT = "true"
-copyright = "&copy; Samuel Flint"
 enableGitInfo = "true"
 
 [permalinks]
@@ -13,27 +11,53 @@ enableGitInfo = "true"
 [params]
     tagline = "A tech and academic blog"
     favicon = "/favicon.ico"
-    mathjax = true
+    title = "Samuel W. Flint"
+    author = "Samuel W. Flint"
+    copyright = "Placed under a CC-0 license"
+    profilePicture = "/img/headshot-2021-cropped.png"
+    disableThemeSwitcher = true
+    doNotLoadAnimations = true
+    contentRatio = 0.7
+    mainSections = []
 
-[author]
-    name = "Samuel W. Flint"
-    email = "swflint(at)flintfam(dot)org"
-    github = "swflint"
-    stackoverflow = "u/2378492"
-    linkedin = "swflint"
-    twitter = "SamuelWFlint"
-    mastodon = "mstdn.io/@swflint"
-    orcid = "0000-0002-8023-9710"
+[params.math]
+    enable = true
+    use = "katex"
 
-[params.matomo]
-   url = "https://stats.flintfam.org"
-   id = 1
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "email"
+url = "mailto:swflint(at)flintfam(dot)org"
 
-[[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/pages/about/"
-    weight = 1
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/swflint"
+
+[[params.socialIcons]]
+icon = "fab fa-stack-overflow"
+title = "StackOverflow"
+url = "https://stackoverflow.com/u/2378492"
+
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "LinkedIn"
+url = "https://linkedin.com/in/swflint"
+
+[[params.socialIcons]]
+icon = "fab fa-twitter"
+title = "Twitter"
+url = "https://twitter.com/SamuelWFlint"
+
+[[params.socialIcons]]
+icon = "fab fa-orcid"
+title = "ORCiD"
+url = "https://orcid.org/0000-0002-8023-9710"
+
+[[params.socialIcons]]
+icon = "fas fa-key"
+title = "PGP Key"
+url = "/pages/pgp/"
 
 [[menu.main]]
     identifier = "publications"
