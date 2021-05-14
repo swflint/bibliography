@@ -4,11 +4,6 @@
 !.gitmodules
 !.gitkeep
 
-!.htaccess
-
-/public/
-/result
-
 # Emacs Stuff
 *~
 \#*\#

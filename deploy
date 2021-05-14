@@ -1,9 +1,0 @@
-#!/bin/sh
-
-USER=swflint
-HOST=lhopital.flintfam.org
-DIR=/var/www/samflint.com
-
-hugo || exit
-rsync -avz public/ ${USER}@${HOST}:$DIR
-
