@@ -8,3 +8,4 @@ In <i>{{ if .booktitle }}{{ .booktitle }}{{ end }}</i>, {{ .date | markdownify }
 {{ if .status }}<i>{{ .status }}.</i>{{ end }}
 {{ partial "utils/doi.html" . }}
 {{ partial "utils/eprint.html" . }}
+{{ partial "utils/annotation.html" . }}

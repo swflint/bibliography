@@ -4,3 +4,4 @@
 <i>{{ .journal | markdownify }}</i>, {{ .volume }}, {{ .number }}, {{ if .pages }}{{ .pages }}{{ else if .number }}Article {{ .number }}{{ end }}.
 {{ partial "utils/doi.html" . }}
 {{ partial "utils/eprint.html" . }}
+{{ partial "utils/annotation.html" . }}
