@@ -2,3 +2,5 @@
 
 git subtree pull --prefix=themes/anatole https://github.com/lxndrblz/anatole.git master --squash
 git subtree pull --prefix=themes/bibliography https://github.com/swflint/bibliography.git master --squash
+
+git config pull.rebase false
