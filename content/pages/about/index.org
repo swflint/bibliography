@@ -1,12 +1,10 @@
----
-title: "About"
-date: 2020-06-25T10:45:47-05:00
-lastmod: 2020-06-26T20:22:08-05:00
-draft: false
-disableComments: "true"
----
+#+TITLE: About
+#+DATE: 2020-06-25T10:45:47-05:00
+#+DRAFT: false
 
-My name is Sam Flint.  I'm currently a PhD student at the University of Nebraska---Lincoln studying Computer Science.  I completed my BS in the same at the same in 2020.  My background is in fundamentals and classical AI, but I'm currently studying Machine Learning and related techniques, and am interested in effective undergraduate Computer Science education.
+I'm Samuel W. Flint (Sam to most people).  I'm currently a PhD student at the University of Nebraska--Lincoln, studying under [[https://cse.unl.edu/~rdyer][Professor Robert Dyer]] in the [[https://e2.unl.edu][ESQuaReD lab]].  My interests are in programming languages and their empirical evaluation, as well as, to a lesser extent, computer science and software engineering education.
 
-Outside of the academic, I'm a firm supporter of Free Software, and contribute to several projects, as well as maintain some of my own (see [[{{< ref "pages/projects/index.org">}}][here]]), and am an ardent Emacs user.  My other hobbies include cooking, baking, antique collecting and as of late, bicycling.
+I completed my BS at UNL as well, majoring in Computer Science, with a minor in Philosophy.  During this time, I was an early member of the Department of Computer Science and Engineering's Learning Assistant Program as a Senior Leader, helping to get the program off the ground.  I was also involved in [[https://os2g.unl.edu][OS_{2}G]], for a time, as Vice President.
+
+Outside of the academic, I'm a firm supporter of Free Software, and contribute to several projects, as well as maintain some of my own (see [[{{< ref "pages/projects/index.org">}}][here]]), and am an ardent Emacs user.  I also enjoy cooking, baking, collecting antiques (and repairing typewriters!), and as of late, bicycling.
 
