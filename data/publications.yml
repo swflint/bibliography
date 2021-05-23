@@ -17,3 +17,21 @@
      type: arxiv
      class: cs.SE
      identifier: 2103.11339
+   abstract:
+     Many software engineering research papers rely on time-based data
+     (*e.g.,* commit timestamps, issue report creation/update/close
+     dates, release dates).  Like most real-world data, however,
+     time-based data is often dirty.  To date, there are no studies
+     that quantify how frequently such data is used by the software
+     engineering research community, or investigate sources of and
+     quantify how often such data is dirty.  Depending on the research
+     task and method used, including such dirty data could affect the
+     research results.  This paper presents the first survey of papers
+     that utilize time-based data, published in the Mining Software
+     Repositories (MSR) conference series.  Out of the 690 technical
+     track and data papers published in MSR 2004--2020, we saw at
+     least 35% of papers utilized time-based data.  We then used the
+     Boa and Software Heritage infrastructures to help identify and
+     quantify several sources of dirty commit timestamp data.
+     Finally, we provide guidelines/best practices for researchers
+     utilizing time-based data from Git repositories.
