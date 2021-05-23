@@ -1,5 +1,8 @@
-{{ partial "utils/anchor.html" . }}
-{{ partial "utils/name-list.html" .author }}
-{{ .year }}. {{ .title }}, {{ .volume }}: {{ .booktitle }}{{ if .edition }}, ({{.edition}}){{ end }}. {{ .publisher }}
-{{ partial "utils/doi.html" . }}
-{{ partial "utils/annotation.html" . }}
+<p>
+    {{ partial "utils/anchor.html" . }}
+    {{ partial "utils/name-list.html" .author }}
+    {{ .year }}. {{ .title }}, {{ .volume }}: {{ .booktitle }}{{ if .edition }}, ({{.edition}}){{ end }}. {{ .publisher }}
+    {{ partial "utils/doi.html" . }}
+    {{ partial "utils/annotation.html" . }}
+</p>
+{{ partial "utils/abstract.html" . }}
