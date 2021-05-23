@@ -19,4 +19,4 @@ Sure!
 
 It looks like this:
 
-{{< figure src="/img/knuth-check.jpg" caption="Knuth Reward Check" >}}
+{{< figure src="./images/knuth-check.jpg" caption="Knuth Reward Check" >}}
