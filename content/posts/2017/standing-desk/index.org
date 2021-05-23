@@ -14,7 +14,7 @@ So, I use the desk shown below, but here are the specs:
  - Standing Mat :: I use [[https://smile.amazon.com/gp/product/B00OUFX0YY/ref=oh_aui_detailpage_o01_s02?ie=UTF8&psc=1][AmazonBasics Premium Anti-Fatigue Standing, 20x36-Inches, Black]], it's quite comfortable, and as standing mats go, pretty low-cost.
 
 
- {{< figure src="/img/desk.jpg" caption="Standing Desk, as set up">}}
+ {{< figure src="./images/desk.jpg" caption="Standing Desk, as set up">}}
  
 * My Thoughts
 
