@@ -72,15 +72,15 @@ url = "/pages/pgp/"
     weight = 3
 
 [[menu.main]]
-    identifier = "pages"
-    name = "Pages"
-    url = "/pages/"
-    weight = 4
-
-[[menu.main]]
     identifier = "posts"
     name = "Posts"
     url = "/posts/"
+    weight = 4
+
+[[menu.main]]
+    identifier = "pages"
+    name = "Pages"
+    url = "/pages/"
     weight = 5
 
 [[menu.main]]
