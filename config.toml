@@ -4,6 +4,12 @@ theme = ["anatole", "bibliography"]
 enableRobotsTXT = "true"
 enableGitInfo = "true"
 
+[outputs]
+    home = ["HTML"]
+    section = ["HTML", "RSS"]
+    taxnomy = ["HTML"]
+    term = ["HTML"]
+
 [permalinks]
     posts = "/posts/:year/:month/:day/:title/"
     pages = "/pages/:title"
@@ -19,6 +25,7 @@ enableGitInfo = "true"
     doNotLoadAnimations = true
     contentRatio = 0.7
     mainSections = []
+    rssFullContent = true
 
 [params.math]
     enable = true
