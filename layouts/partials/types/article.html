@@ -1,7 +1,8 @@
 <p>
     {{ partial "utils/anchor.html" . }}
     {{ partial "utils/name-list.html" .author }}
-    {{ .year | markdownify }}
+    {{ .year }}.
+    {{ .title | markdownify }}.
     <i>{{ .journal | markdownify }}</i>, {{ .volume }}, {{ .number }}, {{ if .pages }}{{ .pages }}{{ else if .number }}Article {{ .number }}{{ end }}.
     {{ partial "utils/doi.html" . }}
     {{ partial "utils/eprint.html" . }}
