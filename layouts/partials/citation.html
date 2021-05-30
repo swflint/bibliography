@@ -1,2 +1,7 @@
+{{ if .present }}
+{{ $partial_name := printf "types/%s.html" .present }}
+{{ partial $partial_name . }}
+{{ else }}
 {{ $partial_name := printf "types/%s.html" .type }}
 {{ partial $partial_name . }}
+{{ end }}
