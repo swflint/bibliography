@@ -1,7 +1,0 @@
-{{ if .eprint }}
-{{ if eq .eprint.type "arxiv" }}
-Preprint: <a href="https://arxiv.org/abs/{{ .eprint.identifier }}">arXiv:{{ .eprint.identifier }} {{ if .eprint.class }}[{{ .eprint.class }}]{{ end }}</a>.
-{{ else if eq .eprint.type "url" }}
-Preprint: <a href="{{ .eprint.url }}">{{ .eprint.text }}</a>.
-{{ end }}
-{{ end }}
