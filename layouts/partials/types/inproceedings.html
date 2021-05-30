@@ -2,10 +2,10 @@
     {{ partial "utils/anchor.html" . }}
     {{ partial "utils/name-list.html" .author }}
     {{ .year }}.
-    {{ .title }}.
-    In <i>{{ if .booktitle }}{{ .booktitle }}{{ end }}</i>, {{ .date | markdownify }}{{if .location }}, {{ .location }}{{ end }}.
-    {{ if .publisher }}{{ .publisher }}.{{end}}
-    {{if .pages}}{{ .pages }}.{{end}}
+    {{ .title | markdownify }}.
+    {{ if .booktitle }}In <i>{{ .booktitle }}</i>,{{ end }} {{ .date | markdownify }}{{if .location }}, {{ .location }}{{ end }}.
+    {{ if .publisher }}{{ .publisher }}.{{ end }}
+    {{ if .pages }}{{ .pages }}.{{ end }}
     {{ if .status }}<i>{{ .status }}.</i>{{ end }}
     {{ partial "utils/doi.html" . }}
     {{ partial "utils/eprint.html" . }}
