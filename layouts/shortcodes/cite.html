@@ -1,0 +1,12 @@
+{{ $key := .Get "key" }}
+
+{{ if (gt (.Page.Scratch.Get $key) 0) }}
+{{ $num := .Page.Scratch.Get $key }}
+<a href="#{{$key}}">[{{ $num }}]</a>
+{{ else }}
+{{ $num := .Page.Scratch.Get "cite-num" }}
+{{ .Page.Scratch.Add "cite-num" 1 }}
+<a href="#{{$key}}">[{{$num}}]</a>
+{{ .Page.Scratch.Add "citations" $key }}
+{{ .Page.Scratch.Add $key $num }}
+{{ end }}

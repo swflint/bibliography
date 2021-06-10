@@ -1,0 +1,14 @@
+<h3>Bibliography</h3>
+
+{{ $source := .Page.Scratch.Get "cite-source" }}
+{{ $data := (index .Site.Data $source)}}
+<ol>
+    {{ range .Page.Scratch.Get "citations" }}
+    {{ $key := . }}
+    {{ range $data }}
+    {{ if (eq $key .key) }}
+    <li>{{ partial "citation.html" . }}</li>
+    {{ end }}
+    {{ end }}
+    {{ end }}
+</ol>

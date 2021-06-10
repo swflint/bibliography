@@ -1,0 +1,7 @@
+{{ $source := .Get "source" }}
+
+{{ if isset .Site.Data $source }}
+{{ .Page.Scratch.Set "cite-num" 1 }}
+{{ .Page.Scratch.Set "cite-source" $source}}
+{{ .Page.Scratch.Set "citations" (slice) }}
+{{ end }}
