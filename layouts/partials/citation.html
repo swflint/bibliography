@@ -1,7 +1,15 @@
 {{ if .present }}
 {{ $partial_name := printf "types/%s.html" .present }}
 {{ partial $partial_name . }}
+{{ if .youtube }}
+<b>Presentation:</b></br>
+{{ partial "bibtube" .youtube }}
+{{ end }}
 {{ else }}
 {{ $partial_name := printf "types/%s.html" .type }}
 {{ partial $partial_name . }}
+<b>Presentation:</b></br>
+{{ if .youtube }}
+{{ partial "bibtube" .youtube }}
+{{ end }}
 {{ end }}
