@@ -8,8 +8,8 @@
 {{ else }}
 {{ $partial_name := printf "types/%s.html" .type }}
 {{ partial $partial_name . }}
-<b>Presentation:</b></br>
 {{ if .youtube }}
+<b>Presentation:</b></br>
 {{ partial "bibtube" .youtube }}
 {{ end }}
 {{ end }}
