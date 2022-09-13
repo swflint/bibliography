@@ -3,7 +3,7 @@
     {{ partial "utils/name-list.html" .author }}
     {{ .year }}.
     {{ .title | markdownify }}.
-    <i>{{ .journal | markdownify }}</i>, {{ .volume }}, {{ .number }}, {{ if .pages }}{{ .pages }}{{ else if .number }}Article {{ .number }}{{ end }}.
+    <i>{{ .journal | markdownify }}</i>, {{ .volume }}, {{ .number }}, {{ if .pages }}{{ .pages }}{{ else if .eid }}Article {{ .eid }}{{ end }}.
     {{ partial "utils/doi.html" . }}
     {{ partial "utils/eprint.html" . }}
     {{ partial "utils/dataset.html" . }}
